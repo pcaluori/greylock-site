@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire - Greylock Guitars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="logo.svg" alt="Greylock Guitars" class="logo-img"></a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#models" class="nav-link">Guitars</a>
+                <a href="bench.html" class="nav-link">The Bench</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="btn btn-outline">Inquire</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div style="padding-top: 80px;">
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Info Side -->
+                    <div class="contact-info">
+                        <div>
+                            <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin-bottom: 1.5rem; font-family: var(--font-heading);">Start the Conversation</h1>
+                            <p style="font-size: 1.125rem; color: var(--muted-foreground); margin-bottom: 3rem; line-height: 1.8;">
+                                Every Greylock model is a starting point for a conversation about what a specific player actually needs. Tell us how you play and which guitar draws you, and we'll take it from there.
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@greylockguitars.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Workshop</h3>
+                                <p>Metuchen, New Jersey</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Form Side -->
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="c6c808ee-27d1-432d-9627-1335bfb1e6ac">
+                            <input type="hidden" name="subject" value="New inquiry from greylockguitars.com">
+                            <input type="hidden" name="from_name" value="Greylock Guitars website">
+                            <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us how you play and which model you're drawn to..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="logo-stacked-light.svg" alt="Greylock Guitars" class="footer-logo">
+                    <p class="footer-tagline">A guitar honed to disappear in your hands.</p>
+                    <p class="footer-established">Building guitars since 1992. Greylock Guitars established 2020.</p>
+                    <p class="footer-location">Metuchen, NJ · <a href="mailto:info@greylockguitars.com">info@greylockguitars.com</a></p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#models">Models</a></li>
+                        <li><a href="bench.html">The Bench</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Greylock Guitars, LLC. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
