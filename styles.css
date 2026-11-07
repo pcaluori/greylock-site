@@ -2143,3 +2143,6 @@ a {
 
 /* Article photo that is much wider than 16:10 keeps its natural shape */
 .bench-article-figure--natural img { aspect-ratio: auto; height: auto; }
+
+/* Hidden carousel slides must not catch clicks meant for the visible photo */
+.gallery-image:not(.active) { pointer-events: none; }

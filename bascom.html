@@ -42,6 +42,17 @@
                     <div class="model-media gallery-container">
                         <div class="gallery-images" id="bascomGallery">
                             <img src="attached_assets/bascom-2.jpg" alt="Bascom semi-hollow archtop in tobacco sunburst with Bigsby tremolo" class="gallery-image active">
+                            <img src="attached_assets/bascom-3.jpg" alt="Close view of the Bascom body: spruce top in tobacco sunburst, two vintage humbuckers, tune-o-matic style bridge and Bigsby tremolo" class="gallery-image">
+                            <img src="attached_assets/bascom-4.jpg" alt="Detail of the Bascom f-hole and sunburst spruce top, with the Greylock label visible inside" class="gallery-image">
+                            <img src="attached_assets/bascom-5.jpg" alt="Back of the Bascom showing the walnut-toned back, maple neck and headstock with chrome tuners" class="gallery-image">
+                        </div>
+                        <button class="gallery-btn gallery-prev" onclick="changeImage('bascomGallery', -1)" aria-label="Previous image">‹</button>
+                        <button class="gallery-btn gallery-next" onclick="changeImage('bascomGallery', 1)" aria-label="Next image">›</button>
+                        <div class="gallery-dots" id="bascomDots">
+                            <span class="gallery-dot active" onclick="setImage('bascomGallery', 0)"></span>
+                            <span class="gallery-dot" onclick="setImage('bascomGallery', 1)"></span>
+                            <span class="gallery-dot" onclick="setImage('bascomGallery', 2)"></span>
+                            <span class="gallery-dot" onclick="setImage('bascomGallery', 3)"></span>
                         </div>
                     </div>
                     <div class="model-copy">
@@ -141,8 +152,6 @@
         <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
